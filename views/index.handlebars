@@ -1,0 +1,13 @@
+<h1>Show Data Api Express</h1>
+<ul class="data">
+    {{#each data}}
+        <li class="data-items">
+            <img src="{{this.imgURL }}" class="data-image">
+            <div class="data-name">{{ this.name }}</div>
+            <small class="data-type">{{ this.type }}</small>
+            <div>
+                <span class="data-price">ราคา {{ this.price }} </span>
+            </div>
+        </li>
+    {{/each}}
+</ul>
